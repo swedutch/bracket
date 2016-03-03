@@ -3,7 +3,7 @@ include('config.php');
 
 echo 'Hello World<hr>';
 
-		$mysqli = new mysqli($host, $user, $pw, $dbname, 3306);
+		$mysqli = new mysqli($GLOBALS['host'], $GLOBALS['user'], $GLOBALS['pw'], $GLOBALS['dbname'], 3306);
 
 		if(!$mysqli->connect_error)
 		{
